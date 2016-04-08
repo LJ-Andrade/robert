@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+body {
+  background: black; }
+
+a:hover {
+  text-decoration: none; }
+
+#doThis.vtxt_wrapper {
+  width: 598px;
+  height: 665px;
+  margin: 5px auto 10px; }
+
+#doThis .vtxt_oldSchoolContent {
+  top: 65px;
+  left: 60px;
+  height: 200px;
+  width: 274px;
+  padding: 40px 48px;
+  font-size: 14px;
+  line-height: 16px;
+  box-shadow: inset 0px 0px 85px 5px black; }
+
+#doThis .vtxt_wrapper input, #doThis .vtxt_wrapper input:focus {
+  font-size: 13px; }
+
+/* Mini VintageTxt Screen */
+#miniTxt {
+  width: 170px;
+  height: 59px;
+  margin: 5px auto 5px; }
+
+#miniTxt .vtxt_oldSchoolContent {
+  height: 41%;
+  padding: 10% 15%;
+  font-size: 12px;
+  line-height: 14px;
+  box-shadow: inset 0px 0px 15px 5px black; }
+
+#miniTxt .vtxt_wrapper input, #miniTxt .vtxt_wrapper input:focus {
+  font-size: 11px; }
+
+#miniTxt.vtxt_defaultBorder {
+  -webkit-box-shadow: inset 0px 0px 5px 1px black;
+  box-shadow: inset 0px 0px 5px 1px black;
+  -webkit-border-radius: 12px;
+  border-radius: 12px; }
+
+#imgCred {
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  font-family: Verdana, "Times New Roman", SERIF;
+  font-size: 8px; }
+
+div#meStuff {
+  position: fixed;
+  top: 0px;
+  left: 5px;
+  font-family: Verdana, "Times New Roman", SERIF;
+  font-size: 10px; }
+
+.vtxt_wrapper {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 60px auto 0;
+  background: #000;
+  background-image: url("../images/evenbg.gif");
+  overflow: hidden; }
+
+.vtxt_oldSchoolContent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 73%;
+  width: 80%;
+  padding: 10% 10%;
+  color: #0F0;
+  font-family: "Courier", fixed, monospace;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: pre-wrap;
+  text-shadow: 0 0 3px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  z-index: 50; }
+
+.vtxt_oldSchoolContentText a {
+  color: #0F0; }
+
+.vintageTxt_overlay {
+  position: relative;
+  z-index: 99; }
+
+.vtxt_wrapper input, .vtxt_wrapper input:focus {
+  color: #0f0;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: "Courier", fixed, monospace;
+  text-shadow: 0 0 3px;
+  text-transform: uppercase; }
+
+.vtxt_defaultBorder {
+  -webkit-box-shadow: inset 0px 0px 85px 5px black;
+  box-shadow: inset 0px 0px 85px 5px black;
+  -webkit-border-radius: 35px;
+  border-radius: 35px; }
+
+.gotoflame {
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif; }
+
+.container1 {
+  margin: 0 auto;
+  margin-top: -200px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  transform-origin: center bottom;
+  animation-name: flicker;
+  animation-duration: 3ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+.flame {
+  bottom: 0;
+  position: absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-45deg) scale(1.5, 1.5); }
+
+.yellow {
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: gold;
+  box-shadow: 0px 0px 9px 4px gold; }
+
+.orange {
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: orange;
+  box-shadow: 0px 0px 9px 4px orange; }
+
+.red {
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed; }
+
+.white {
+  left: 15px;
+  bottom: -4px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  box-shadow: 0px 0px 9px 4px white; }
+
+.circle {
+  border-radius: 50%;
+  position: absolute; }
+
+.blue {
+  width: 10px;
+  height: 10px;
+  left: 25px;
+  bottom: -25px;
+  background: SlateBlue;
+  box-shadow: 0px 0px 15px 10px SlateBlue; }
+
+.black {
+  width: 40px;
+  height: 40px;
+  left: 10px;
+  bottom: -60px;
+  background: black;
+  box-shadow: 0px 0px 15px 10px black; }
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg); }
+  20% {
+    transform: rotate(1deg); }
+  40% {
+    transform: rotate(-1deg); }
+  60% {
+    transform: rotate(1deg) scaleY(1.04); }
+  80% {
+    transform: rotate(-2deg) scaleY(0.92); }
+  100% {
+    transform: rotate(1deg) matrix(); } }
+
+/*# sourceMappingURL=styles.css.map */
